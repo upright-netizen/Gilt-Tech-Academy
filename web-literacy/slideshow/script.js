@@ -39,33 +39,25 @@
         //  Prev Slide
         //
         if (key === 37 || key === 38) {
-          console.log('prev');
-
           if (!active.is(first)) {
             active.removeClass('active');
             prev.addClass('active');
             win.scrollTop(prev.position().top);
-          } else {
-            console.log('at the beginning');
           }
+          event.preventDefault();
         }
 
         //
         //  Next Slide
         //
         if (key === 39 || key === 40) {
-          console.log('next');
-
           if (!active.is(last)) {
             active.removeClass('active');
             next.addClass('active');
             win.scrollTop(next.position().top);
-          } else {
-            console.log('at the end');
           }
+          event.preventDefault();
         }
-
-        event.preventDefault();
     });
 
     // keys = function handleKeys (e) {

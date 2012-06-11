@@ -8,19 +8,101 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section class="presentation">
+  <section id="presentation" class="presentation">
     <article class="slide">
-      <h1 class="title">Welcome</h1>
+      <h1 class="title huge">Welcome</h1>
+      <p class="sub-text">to Web Literacy</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">I'm Nathan</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">That's Chicks</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">and Patrick.</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy">With Special Guest</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">Mark Wunsch</h1>
     </article>
 
     <article class="slide">
       <h1 class="title">Here are your things</h1>
+      <p class="sub-text">
+        <a href="http://amzn.to/MtOXEY" title="book">+ a Book</a></p>
+      <p class="sub-text"><a href="http://uprightnetizen.com/gta/web-literacy/syllabus/" title="syllabus">+ a Syllabus</a></p>
+      <p class="sub-text"><a href="http://bit.ly/Lvygfb" title="mmmmmmmm">+ Some Pizza?</a></p>
     </article>
+
+    <article class="slide">
+      <h1 class="title huge">We Cool?</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Accessible Everywhere</h1>
+      <p class="sub-text">
+        <a href="http://uprightnetizen.com/weblit/" title="uprightnetizen.com/weblit/">uprightnetizen.com/weblit/</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Upright What??</h1>
+    </article>
+
+    <article class="slide">
+      <img src="img/these-jerks.jpg" />
+      <p class="sub-text">these guys</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">What You'll Learn</h1>
+      <p class="sub-text"><a target="_blank" href="http://uprightnetizen.com/gta/web-literacy/syllabus/">Look at your Syllabus</a></p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Feedback Welcome</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge"><a target="_blank" href="http://uprightnetizen.com/gta/web-literacy/lesson-0/setup/">The Setup</a></h1>
+    </article>
+
+
+
+  </section>
+
+
+
+
+
+
+
 
   <div class="scripts">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.js"><\/script>')</script>
-    <script src="../slideshow/script.js"></script>
+    <!-- <script src="../slideshow/script.js"></script> -->
+    <script src="../js/fathom.min.js"></script>
+    <script>
+    (function($, undefined){
+      $(function onReady () {
+        $('#presentation').fathom({
+          displayMode : 'multi',
+          margin : 5000,
+          slideTagName : 'article'
+        })
+      });
+    }(this.jQuery));
+    </script>
   </div>
 
 </body>
