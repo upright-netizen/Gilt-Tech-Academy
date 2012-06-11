@@ -1,0 +1,15 @@
+html {
+  height : 100%;
+  width : 100%;
+}
+
+.slide {
+  height : 700px;
+  margin : 35px 35px 1500px 35px;
+  text-align : center;
+}
+
+.slide .title {
+  font-family : 'LeagueGothic';
+  font-size : 100px;
+}
