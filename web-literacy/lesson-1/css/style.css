@@ -37,6 +37,10 @@
   margin : 0;
 }
 
+.small-tag {
+  font-size : 100px;
+}
+
 .blur {
   color : #888;
 }
