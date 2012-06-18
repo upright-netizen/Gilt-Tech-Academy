@@ -58,3 +58,8 @@ a:hover {
 .slide .sub-text {
   font-size : 45px;
 }
+
+.slide ul {
+  font-size : 30px;
+  text-align : left;
+}
