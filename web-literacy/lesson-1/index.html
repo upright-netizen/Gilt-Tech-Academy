@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<html>
+  <meta charset="utf-8">
+
+  <title>slide show</title>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+    <article class="slide">
+      <h1 class="title huge">Lesson 1</h1>
+      <p class="sub-text">Let's learn HTML</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy">In the beginning</h1>
+      <p class="sub-text">there was print</p>
+    </article>
+
+    <article class="slide history">
+      <h1>A breif history</h1>
+      <ul class="">
+        <li>
+          <dt>A long time ago in Egypt</dt>
+          <dd>People draw stuff on papyrus</dd>
+        </li>
+        <li>
+          <dt>1439</dt>
+          <dd>Guttenburg made a press</dd>
+        </li>
+        <li>
+          <dt>1440 - 1989</dt>
+          <dd>People make a lot of books</dd>
+        </li>
+        <li>
+          <dt>1990</dt>
+          <dd>Tim Berners Lee creates HTML</dd>
+        </li>
+      </ul>
+    </article>
+
+    <article class="slide">
+      <img src="img/timmy-lee.jpg" />
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Academic Documents</h1>
+      <p class="sub-text">Sir Lee worked at CERN and wanted a thing to store documentation</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Sounds like paper</h1>
+      <p class="sub-text">"Page", "Margin", "Line Height", "Paragraph", "Title", "Heading", etc</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Pipes got fatter</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">It's not paper ...</h1>
+    </article>
+
+    <article class="slide">
+      <div class="crackronym">
+        <strong>H</strong>yper <br />
+        <strong>T</strong>ext  <br />
+        <strong>M</strong>arkup <br />
+        <strong>L</strong>anguage <br />
+      </div>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Hypertext</h1>
+      <p class="sub-text">documents connected by links</p>
+    </article>
+
+    <article class="slide">
+      <img src="img/help-file.png" />
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Markup</h1>
+      <p class="sub-text">is a logic-less language that uses a <em>mechanism</em> to add symantics to a document</p>
+    </article>
+
+    <article class="slide">
+      <p>This ...</p>
+      <img src="img/latex-raw.png" />
+    </article>
+
+    <article class="slide">
+      <p>turns into this.</p>
+      <img src="img/latex.png" width="800px" />
+    </article>
+
+    <article class="slide">
+      <h1 class="title">HTML Tag</h1>
+      <p class="sub-text">That <em>mechanism</em> in HTML is called a "tag"</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">In Pairs</h1>
+      <p class="tag">&lt;tag&gt; &lt;/tag&gt;</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Or Single</h1>
+      <p class="tag">&lt;tag /&gt;</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Angle brackets are special</h1>
+      <p class="sub-text">You can't use &lt; or &gt; in your stuff</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">por ejemplo</h1>
+    </article>
+
+    <article class="slide">
+      <p class="sub-text">This,</p>
+      <p class="code">&lt;p&gt;In math, we talked about a &lt; b, and b &gt; c.&lt;/p&gt;</p>
+      <p class="sub-text">is gonna' look like this</p>
+      <p class="code result">In math, we talked about a c.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">How to HTML</h1>
+      <p class="sub-text">Here's how you make a web page</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Your basic page</h1>
+      <pre><p class="code">
+        &lt;!doctype html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;/body&gt;
+        &lt;/html&gt;
+      </p></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">doctype</h1>
+      <pre><p class="code">
+        &lt;!doctype html&gt;
+        <span class="blur">&lt;html&gt;
+          &lt;head&gt;
+
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;/body&gt;
+        &lt;/html&gt;</span>
+      </p></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">HTML (the tag)</h1>
+      <pre><p class="code">
+        <span class="blur">&lt;!doctype html&gt;</span>
+        &lt;html&gt; &lt;-- Everything goes in here --&gt;
+          <span class="blur">&lt;head&gt;
+
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;/body&gt;</span>
+        &lt;/html&gt;
+      </p></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Head</h1>
+      <pre><p class="code">
+        <span class="blur">&lt;!doctype html&gt;
+        &lt;html&gt;</span>
+          &lt;head&gt;
+            &lt;!-- This has stuff about your page --&gt;
+          &lt;/head&gt;
+          <span class="blur">&lt;body&gt;
+
+          &lt;/body&gt;
+        &lt;/html&gt;</span>
+      </p></pre>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space">Body</h1>
+      <pre><p class="code">
+        <span class="blur">&lt;!doctype html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+
+          &lt;/head&gt;</span>
+          &lt;body&gt;
+            &lt;!-- This IS your page (the stuff you see) --&gt;
+          &lt;/body&gt;
+        <span class="blur">&lt;/html&gt;</span>
+      </p></pre>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space">Head</h1>
+      <p class="sub-text">We use the head to provide infomation about our page, and include resources for out page, but nothing in the head shows up on the page.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="no-space">What does this look like</h1>
+      <pre><p class="code">
+    &lt;!doctype html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        Hello, this is my web page! In order to make this
+        a decent example I need to write more stuff in here.
+        You don't have to read it all, it's just for effect.
+        The hilarious part about all this, is that this won't
+        show up at all, because it's in the head. And the head
+        doesn't work that way. lolz
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+      </p></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">Let's find out.</h1>
+      <p class="sub-text">Cue the example<p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge fancy">Nothing!</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Body</h1>
+      <p class="sub-text">What you put in this page is what you see in the browser windown.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="no-space">Let's try this again</h1>
+      <pre><p class="code">
+    &lt;!doctype html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        Hello, this is my web page! In order to make this
+        a decent example I need to write more stuff in here.
+        You don't have to read it all, it's just for effect.
+        Now that we have this in the body tag, we should see it
+        just fine in the browser. still lolz
+      &lt;/body&gt;
+    &lt;/html&gt;
+      </p></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Structural vs Semantic</h1>
+      <p class="sub-text">What the <strong>what</strong>?</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Example!</h1>
+      <p class="sub-text">Tell me what this is, and don't say "a web page".</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">In a browser,</h1>
+      <p class="sub-text"><a href="mother.html" title="this">this</a> might look different</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Whitespace is a jerk</h1>
+      <p class="sub-text">HTML renders all white space as a single space</p>
+    </article>
+
+
+  </section>
+
+
+
+  <div class="scripts">
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.js"><\/script>')</script> -->
+    <!-- <script src="../slideshow/script.js"></script> -->
+    <script src="/javascripts/libs/jquery-1.7.2.js"></script>
+    <script src="../js/fathom.min.js"></script>
+    <script>
+    (function($, undefined){
+      $(function onReady () {
+        $('#presentation').fathom({
+          displayMode : 'multi',
+          margin : 5000,
+          slideTagName : 'article'
+        })
+      });
+    }(this.jQuery));
+    </script>
+  </div>
+
+</body>
+</html>
