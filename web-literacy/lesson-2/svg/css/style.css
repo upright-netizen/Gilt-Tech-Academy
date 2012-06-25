@@ -1,0 +1,14 @@
+.title {
+  font-family: sans-serif;
+  font-size: 100px;
+}
+
+.ninja {
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.ninja .top-thing {
+  fill : red;
+}
