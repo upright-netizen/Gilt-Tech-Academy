@@ -1,0 +1,44 @@
+/*
+  Descendant selector
+*/
+
+#main p {
+  color : blue;
+}
+
+#main .test-3 {
+  color : blue;
+}
+
+/*
+  The + combinator matches the second element only if it
+  is immediately following the first element.
+*/
+
+#main .test-2 + p {
+  font-weight : bold;
+}
+
+/*
+  The ~ combinator separates two selectors and matches the
+  second element only if it is preceded by the first, and
+  both share a common parent.
+*/
+
+#main .test-1 ~ p {
+  font-style : italic;
+}
+
+
+#main .like-rabbits .child {
+  font-size : 24px
+}
+
+#main .like-rabbits div {
+  color : purple;
+}
+
+#main .like-rabbits > .child {
+  color : orange;
+}
+
