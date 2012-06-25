@@ -45,6 +45,12 @@ a:hover {
   border-bottom : 4px dashed;
 }
 
+.big {
+  font-family : 'LeagueGothic';
+  font-size : 100px;
+  margin : .5em 0 0;
+}
+
 .slide .huge {
   font-size : 300px;
 }

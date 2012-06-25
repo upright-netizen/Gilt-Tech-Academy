@@ -1,0 +1,84 @@
+.tag {
+  font-size : 65px;
+  padding-top : 50px;
+  margin : 0;
+}
+
+.demo-text {
+  font-size : 60px;
+}
+
+.hex-counting {
+  font-family : monospace;
+}
+
+.red {
+  color : tomato;
+}
+
+.text-color-demo1 {
+  background-color: #00fd84;
+  color: #c8fd28;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.text-color-demo2 {
+  background-color : #ff255f;
+  color: #49fff8;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+.opacity-example {
+  position: relative;
+}
+
+
+.opacity-example .solid-thing{
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  background-color: #57dbff;
+  height: 300px;
+  width: 300px;
+}
+
+.opacity-example .see-through-thing{
+  position: absolute;
+
+  opacity : .45;
+  background-color : red;
+  color: #000;
+  top: 200px;
+  left: 630px;
+}
+
+
+
+.alpha-example {
+  position: relative;
+}
+
+
+.alpha-example .solid-thing{
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  background-color: #57dbff;
+  height: 300px;
+  width: 300px;
+}
+
+.alpha-example .see-through-thing{
+  position: absolute;
+
+  background-color : red;
+  background-color : rgba(255, 0, 0, .45);
+  color: #000;
+  top: 200px;
+  left: 630px;
+}

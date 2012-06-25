@@ -18,19 +18,34 @@
     </article>
 
     <article class="slide">
-      <h1 class="title">hypertext</h1>
-      <p class="sub-text"></p>
+      <h1 class="title huge">Links</h1>
+      <p class="sub-text">Putting the <em>hyper</em> in hypertext</p>
     </article>
 
     <article class="slide">
       <h1 class="title">anchor tag</h1>
-      <p class="sub-text"></p>
+      <p class="tag">
+        &lt;a href="" title="" target=""&gt;Link!&lt;/a&gt;
+      </p>
     </article>
 
+    <article class="slide">
+      <h1 class="title no-space fancy">href points us to a diffent place</h1>
+      <p class="tag">
+        &lt;a href="<span style="color : red">[location]</span>"&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
 
     <article class="slide">
-      <h1 class="title">link to the same document</h1>
-      <p class="sub-text"></p>
+      <h1 class="title fancy no-space">the ID attr</h1>
+      <pre>
+        <p class="code">
+          &lt;section <span style="color : red">id="section-1"</span>&gt;Section 1&lt;/section&gt;
+        </p>
+      </pre>
+      <p class="sub-text">
+        <a href="http://muppet.corp.gilt.com/misc/sticky-nav-talk/" title="example" target="_blank">example</a>
+      </p>
     </article>
 
     <article class="slide">
@@ -38,6 +53,12 @@
       <p class="sub-text">but on the same site</p>
     </article>
 
+    <article class="slide">
+      <h1 class="title fancy">put the path in the href</h1>
+      <p class="tag">
+        &lt;a href="<span style="color : red">/path/to/file.html</span>"&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
 
     <article class="slide">
       <h1 class="title">Paths</h1>
@@ -50,19 +71,40 @@
     </article>
 
     <article class="slide">
+      <h1 class="title fancy">put the url in the hrefc</h1>
+      <p class="tag" style="font-size : 50px;">
+        &lt;a href="<a href="http://timetraveler.ytmnd.com/" style="text-decoration : none; border : 0;"><span style="color : red;">http://timetraveler.ytmnd.com/</span></a>"&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
       <h1 class="title">Anatomy of a URL</h1>
       <p class="sub-text">do you know this already?</p>
     </article>
 
-
     <article class="slide">
       <h1 class="title">example url</h1>
       <p class="sub-text">{protocol}://{subdomain}.{domain}.{top-level-domain}/{path}/{file}#{anchor}?{query-string}</p>
+      <p>or</p>
+      <p class="">
+        <a href="http://store.apple.com/us/browse/home/shop_mac/family/macbook_air#topic-questions" title="">
+          http://store.apple.com/us/browse/home/shop_mac/family/macbook_air#topic-questions
+        </a></p>
     </article>
 
     <article class="slide">
-      <h1 class="title">email link</h1>
-      <p class="sub-text"></p>
+      <h1 class="title fancy">email link</h1>
+      <p class="tag" style="font-size : 50px;">
+        &lt;a href="<a href="mailto:your@mom.com" style="text-decoration : none; border : 0;"><span style="color : red;">mailto:your@mom.com</span></a>"&gt;Hi Mom!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">New Tab / New Window</h1>
+      <p class="tag" style="font-size : 50px;">
+        &lt;a href="http://f.oo/" <span style="color : red;">target="_blank"</span>&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
     </article>
 
     <article class="slide">
@@ -104,8 +146,9 @@
     </article>
 
     <article class="slide">
-      <h1 class="title">example</h1>
-      <p class="sub-text">image, broken, broken with title</p>
+      <img src="http://placekitten.com/400/400" alt="a kitty" title="a kitty" height="400px" width="400px">
+      <img src="/not/a/real/path" alt="" title="a kitty" height="300px" width="300px">
+      <img src="/not/a/real/path" alt="This is broken" title="a kitty" height="300px" width="300px">
     </article>
 
     <article class="slide">
@@ -150,8 +193,8 @@
 
 
     <article class="slide">
-      <h1 class="title">Noun project Example</h1>
-      <p class="sub-text"><ninja class="svg"></ninja></p>
+      <object data="svg/img/ninja.svg" height="100px" width="100px" type="image/svg+xml" class="ninja"></object>
+      <h1 class="title fancy">the noun project</h1>
     </article>
 
 
@@ -162,28 +205,32 @@
 
 
     <article class="slide">
-      <h1 class="title">A little vocal</h1>
+      <h1 class="title">A little vocab</h1>
       <p class="sub-text"></p>
     </article>
 
     <article class="slide">
       <h1 class="title">Selector</h1>
       <p class="sub-text">how we specify element to apply styles to</p>
+      <p class="sub-text"><span class="red">p</span> { color : tomato }</p>
     </article>
 
     <article class="slide">
       <h1 class="title">declaration (or "style")</h1>
       <p class="sub-text">the thing we want to do to the selected elements, made up of property and value</p>
+      <p class="sub-text">p <span class="red">{ color : tomato }</span></p>
     </article>
 
     <article class="slide">
       <h1 class="title">Property</h1>
       <p class="sub-text">the thing I want to change about my elements</p>
+      <p class="sub-text">p { <span class="red">color</span> : tomato }</p>
     </article>
 
     <article class="slide">
       <h1 class="title">Value</h1>
       <p class="sub-text">What I want to change about my elements</p>
+      <p class="sub-text">p { color : <span class="red">tomato</span> }</p>
     </article>
 
     <article class="slide">
@@ -191,15 +238,443 @@
       <p class="sub-text"></p>
     </article>
 
+    <article class="slide">
+      <h1 class="title">inline</h1>
+      <p class="sub-text">the style attr</p>
+      <pre>
+        <p class="code">
+          &lt;div class="some-div" style="color : tomato;"&gt;&lt;/div&gt;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">The style tag</h1>
+      <p class="sub-text">Put it in your head, please</p>
+      <pre>
+        <p class="code">
+          &lt;style&gt;
+            p { color : tomato; }
+          &lt;/style&gt;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">In it's own file</h1>
+      <p class="sub-text">Linked style sheets, the link tag. Also, in the head</p>
+      <pre>
+        <p class="code">
+          &lt;link rel="stylesheet" href="css/style.css"&gt;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Selectors</h1>
+      <p class="sub-text">targeting your markup</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Don't use *</h1>
+      <p class="sub-text">That is all.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Type Selector</h1>
+      <p class="sub-text">Use the tag name</p>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+          h1 {
+            font-size : 100px;
+            font-weight : bold;
+          }
+
+          p {
+            color : #f0f;
+            padding : 15px
+          }
+
+          ul {
+            color : green;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Class Selector</h1>
+      <p class="sub-text">My favorite, stay tuned to find out way</p>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+           &lt;div class="my-div"&gt;blah blah blah &lt;/div&gt;
+        </p>
+      </pre>
+
+     <pre>
+        <p class="code">
+          .my-div {
+            font-size : 100px;
+            font-weight : bold;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">Id selector</h1>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+           &lt;div id="my-div"&gt;blah blah blah &lt;/div&gt;
+        </p>
+      </pre>
+
+     <pre>
+        <p class="code">
+          #my-div {
+            font-size : 100px;
+            font-weight : bold;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Combinators</h1>
+      <p class="sub-text">Because you probably want more than one thing</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Descentant Selector</h1>
+      <p class="sub-text">Stuff inside of stuff</p>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+          &lt;div class="my-div"&gt;
+            &lt;p&gt;
+              some stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+        </p>
+      </pre>
+
+     <pre>
+        <p class="code">
+          .my-div p{
+            color : purple;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Adjacent sibling</h1>
+      <p class="sub-text">The + combinator matches the second element only if it
+  is immediately following the first element</p>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+          &lt;div class="my-div"&gt;
+            &lt;p class="test-p"&gt;
+              some stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              some other stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+        </p>
+      </pre>
+
+     <pre>
+        <p class="code">
+          .my-div .test-p + p{
+            color : purple;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">General sibling</h1>
+      <p class="sub-text">The ~ combinator separates two selectors and matches the
+  second element only if it is preceded by the first, and
+  both share a common parent.</p>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+          &lt;div class="my-div"&gt;
+            &lt;p class="test-p"&gt;
+              some stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              some other stuff
+            &lt;/p&gt;
 
 
+            &lt;p&gt;
+              yet, even more stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+        </p>
+      </pre>
+
+     <pre>
+        <p class="code">
+          .my-div .test-p ~ p{
+            color : purple;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Child Selector</h1>
+      <p class="sub-text">The > combinator separates two selectors and matches only those elements matched by the second selector that are direct children of elements matched by the first.</p>
+    </article>
+
+    <article class="slide">
+      <pre>
+        <p class="code">
+          &lt;div class="my-div"&gt;
+            &lt;p&gt;
+              some stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              some other stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              yet, even more stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+        </p>
+      </pre>
+
+     <pre>
+        <p class="code">
+          .my-div > p{
+            color : purple;
+          }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Specificity</h1>
+      <p class="sub-text">Now it gets complicated</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="no-space">Who wins?</h1>
+      <pre>
+        <p class="code">
+          &lt;div id="thing" class="thing"&gt;
+        </p>
+
+        <p class="code">
+          div { color : red; }
+
+          #thing { color : blue; }
+
+          .thing { color : green; }
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Let's try</h1>
+      <p class="sub-text">
+        <a href="color-test.html" title="Color Test" target="_blank">here</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">But why?</h1>
+      <p class="sub-text"><em>Specificity Rules</em></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Some say,</h1>
+      <pre>
+        Ids     : 100 points
+        Classes : 10  points
+       Types   : 1   piont
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Prove it</h>
+      <p class="sub-text">
+        <a href="class-override.html" title="How to override an ID" target="_blank">Here</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">So really,</h1>
+      <p class="sub-text">you can never beat an id. so don't use them.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">What about</h1>
+      <p class="sub-text">
+        <a href="cascade.html" title="this" target="_blank">this</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">The Cascade</h1>
+      <pre>
+        Styles, top to bottom
+        Linked stylesheets, top to bottom
+        Internal styles
+        Inline styles
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Quiz Time</h1>
+      <p class="sub-text">
+        <a href="css-selector-test.html" title="this" target="_blank">answers</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">
+        <span style="color : red">C</span>
+        <span style="color : orange">o</span>
+        <span style="color : green">l</span>
+        <span style="color : blue">o</span>
+        <span style="color : violet">r</span>
+      </h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge no-space">Ways to define color</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Good Ol' Hex</h1>
+      <p class="title">
+        #<span style="color:red">FF</span><span style="color:green">FF</span><span style="color:blue">FF</span>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Wait, what's a hexidecimal</h1>
+      <pre class="hex-counting">
+        1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
+
+        1  2  3  4  5  6  7  8  9  A   B   C   D   E   F
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">RGA</h1>
+      <p class="title">
+        rgb(<span style="color:red">255, </span><span style="color:green">255, </span><span style="color:blue">255</span>)
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">HSL</h1>
+      <p class="title no-space" style="font-size : 100px">
+        hsl([hue], [saturation], [lightness])
+      </p>
+      <p class="sub-text">
+        <a href="http://mothereffinghsl.com/" title="Also, this" target="_blank">Also, this</a>
+      </p>
+    </article>
 
 
+    <article class="slide">
+      <h1 class="title">Where to use</h1>
+      <p class="sub-text">
+        color -- Text (foreground) color
+        background-color : Background Color
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Like so</h1>
+      <pre>
+        background-color: #00fd84;
+        color: #c8fd28;
+      </pre>
+      <p class="text-color-demo1">Clashtastic</p>
+      <pre>
+        background-color : #ff255f;
+        color: #49fff8;
+      </pre>
+      <p class="text-color-demo2">Clashtastic</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Transparency</h1>
+      <p class="sub-text">
+        Opacity vs Alpha
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Opacity</h1>
+      <p class="sub-text">
+        Changes the transparancy of the entire element
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Alpha</h1>
+      <p class="sub-text">
+        Changes the transparancy of a color
+      </p>
+    </article>
 
 
+    <article class="slide">
+      <h1 class="title">Opacity</h1>
+      <div class="opacity-example">
 
+        <div class="solid-thing"></div>
 
+        <div class="see-through-thing">
+          <h2>I'm an h2!</h2>
+          <p>This is some text</p>
+        </div>
 
+      </div>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Alpha</h1>
+      <div class="alpha-example">
+
+        <div class="solid-thing"></div>
+
+        <div class="see-through-thing">
+          <h2>I'm an h2!</h2>
+          <p>This is some text</p>
+        </div>
+
+      </div>
+    </article>
 
 
   </section><!-- / .presentation -->
