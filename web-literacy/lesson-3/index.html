@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <title>Lesson 3</title>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+    <article class="slide">
+      <h1 class="title huge">Lesson 3</h1>
+      <p class="sub-text">Organization best practices, text and <abbr title="Getting Things Done">gtd</abbr></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">Organization</h1>
+      <p class="sub-text">My opinion as a professional</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">My folders look like this</h1>
+      <p class="sub-text">
+        <img src="img/folderStructure.png" alt="Basic Folder Structure" width="700px">
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">So, code looks like this</h1>
+      <pre>
+        <p class="code">
+  &hellip;
+  &lt;link rel="stylesheet" href="<span class="highlight">css/style.css</span>"&gt;
+  &hellip;
+  &lt;img src="<span class="highlight">img/someImage.png</span>" alt="This is an image, Amazing!"&gt;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">A little text</h1>
+      <p class="sub-text">Let' talk about making words look pretty for a sec</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">fallback fonts</h1>
+      <p class="sub-text">When using font-family, put some alternatives in there</p>
+      <pre>
+        <p class="code">
+.prettyText {
+  font-family : 'Super custom Mac font', <span class="highlight">Helvetica, sans-serif</span>;
+}
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Last ditch effort</h1>
+      <p class="sub-text">End your font-family defintions with one of these</p>
+      <ul style="font-size: 100px;">
+        <li style="font-family: sans-serif;">sans-serif</li>
+        <li style="font-family: serif;">serif</li>
+        <li style="font-family: monospace;">monospace</li>
+      </ul>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">A word about font-size</h1>
+      <p class="sub-text">Read <a href="http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/" title="16 pixels is good for you">this</a>, and then make all your font's bigger</p>
+    </article>
+
+<!--
+    <article class="slide">
+      <h1 class="title">What's with all these measurements?</h1>
+      <p class="sub-text">There are <a href="http://www.w3.org/TR/css3-values/#font-relative-lengths">several ways</a> to specify sizes in css, including <strong>px</strong>, <strong>pt</strong>, <strong>em</strong>, <strong>ex</strong>, <strong>ch</strong>, and <strong>rem</strong></p>
+    </article>
+-->
+    <article class="slide">
+      <h1 class="title">I want fancier fonts</h1>
+      <p class="sub-text">Not that Georgia and Helvitca can't solve any problem, but sometimes you want some a little sexier</p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">@font-face</h1>
+      <p class="sub-text">Feel free to play along</p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Homework</h1>
+      <p class="sub-text">Read chapters 13 and 15, and celebrate America</p>
+    </article>
+
+
+
+
+
+  </section> <!-- #presentation -->
+
+
+  <div class="scripts">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.js"><\/script>')</script>
+
+    <script src="../js/fathom.min.js"></script>
+    <script>
+    (function($, undefined){
+      $(function onReady () {
+        $('#presentation').fathom({
+          displayMode : 'multi',
+          margin : 5000,
+          slideTagName : 'article'
+        })
+      });
+    }(this.jQuery));
+    </script>
+  </div>
+
+
+</body>
+</html>

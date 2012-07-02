@@ -1,0 +1,35 @@
+.test-text {
+  width : 80%;
+  margin : 10%;
+  min-width: 700px;
+}
+
+.test-area {
+  width : 50%;
+  margin : 0;
+  padding : 0;
+}
+
+.left {
+  float : left;
+}
+
+.right {
+  float: right;
+}
+
+
+/* ---------- Sizes ------------*/
+
+.thirty { font-size : 30px; }
+.forty { font-size : 40px; }
+.fifty { font-size : 50px; }
+.sixty { font-size : 60px; }
+.one-twenty { font-size : 120px; }
+
+
+
+
+.one-point-five {
+  font-size : 1.5em;
+}
