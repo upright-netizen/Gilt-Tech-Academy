@@ -1,14 +1,7 @@
-.fred {
-  font-family: 'Fredericka the Great', cursive;
-  font-size : 4em;
-}
+/*font-family: 'Arbutus', cursive;*/
 
-.cabin {
-  font-family: 'Cabin Sketch', cursive;
-  font-size : 2.5em;
-}
-
-.beans {
-  font-family: 'Frijole', cursive;
-  font-size : 2em;
+.shweetTitle {
+  font-family: 'Arbutus', cursive;
+  font-size: 200px;
+  text-align: center;
 }
