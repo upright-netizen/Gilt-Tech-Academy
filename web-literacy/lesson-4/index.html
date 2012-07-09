@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+  <title>Lesson 4</title>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+    <article class="slide">
+      <h1 class="title">The Box Model</h1>
+      <h2>And Friends</h2>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">The Box Model</h1>
+      <p class="sub-text">Everything is a box with 4 basic parts. Margin, Border, Padding, and Content. Look at this.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="no-space">A Box</h1>
+      <div class="box-example">
+        <div class="box-model-box">
+          Content
+        </div>
+      </div>
+      <p class="sub-text">Inspect Me</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Shorthand Properties</h1>
+      <p class="sub-text">properties that define the box model (margin, border, and padding) can be written in several ways. For instance, <em>margin</em>, is shorthand for <em>margin-top</em>, <em>margin-right</em>, <em>margin-bottom</em>, <em>margin-left</em></p>
+    </article>
+
+    <article class="slide">
+      <pre><p class="code">
+        <span class="comment">/* either */</span>
+        margin-top : 3px;
+        margin-right : 13px;
+        margin-bottom : 17px;
+        margin-left : 7px;
+
+        <span class="comment">/* or    top, right, bottom, left */</span>
+        border : 3px 13px 17px 7px;
+
+        <span class="comment">/* or    top, left/right, bottom */ </span>
+        padding : 5px 10px 5px;
+
+        <span class="comment">/* or    top/bottom, left/right</span>
+        margin : 10px 20px;
+
+        <span class="comment">/* or  top/bottom/left/right */</span>
+        padding : 15px;
+      </p></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Margin</h1>
+      <p class="sub-text">The area past the border, fills the space of the parent on block level elements. Can be specified in px or percentage.</p>
+      <p class="code">
+        margin : 25px 10% 15px 6%;
+      </p>
+    </article>
+
+    <article class="slide">
+      <p>Example:</p>
+      <div class="box-example margin-example">
+        <div class="box-model-margin">
+          Content
+        </div>
+      </div>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space">Centering</h1>
+      <p class="sub-text">
+        Since margin will fill the parent, we can use <code class="red">auto</code> to make up the different
+        between the width of our box and the width of the parent
+      </p>
+
+      <div class="box-example margin-example">
+        <div class="margin-auto">
+          Centered
+        </div>
+      </div>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space">Border</h1>
+      <p class="sub-text">
+        <code class="red">border</code> is shorthand for <code class="red">border-width</code>, <code class="red">border-style</code>, and <code class="red">border-color</code>
+      </p>
+      <pre><p class="code">
+        /*      width, style, color */
+        border : 1px solid black;
+      </p></pre>
+      <p>See page 310 for more border styles</p>
+    </article>
+
+    <article class="slide">
+      <div class="box-example">
+        <div class="border-example">
+          border
+        </div>
+      </div>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Padding</h1>
+      <p class="sub-text">The space between the border and the content.</p>
+    </article>
+
+    <article class="slide">
+      <div class="box-example">
+        <div class="padding-example">
+          padding
+        </div>
+      </div>
+
+      <pre>
+        <p class="code">
+          padding : 35px;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Content</h1>
+      <p class="sub-text">Content can have a fixed height and width. Height and Width can also be specified as min or max</p>
+      <p>
+        <a href="example/content-width-height.html" title="Example">Example</a>
+      </p>
+    </article>
+
+
+
+    <article class="slide">
+      <h1 class="title">Float</h1>
+      <p class="sub-text">How to line stuff up in CSS</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Normal Page Flow</h1>
+      <p class="sub-text">The Browser puts things where it thinks they should go based on their display. <em>Basically</em>, tags fall into two categories : <strong>block</strong> and <strong>inline</strong>.</p>
+    </article>
+
+    <article class="slide">
+      <div class="left">
+        <h2>Some Block Elements</h2>
+        <p>section</p>
+        <p>article</p>
+        <p>div</p>
+        <p>h1, h2, etc</p>
+        <p>header, footer</p>
+        <p>p</p>
+      </div>
+
+      <div class="right">
+        <h2>Some Inline Elements</h2>
+        <p>span</p>
+        <p>a</p>
+        <p>em</p>
+        <p>strong</p>
+        <p>code</p>
+        <p>abbr</p>
+      </div>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Block</h1>
+      <p class="sub-text">If no width is specified, a block element takes the width of its parent. A block level element will cause a "line break"</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Inline</h1>
+      <p class="sub-text">If no width is specified, an inline element will take the width of it's content. An inline element will not cause a "line break". You're not <em>supposed to</em> put block elements inside of inline elements.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title"><a href="example/blocks-inlines.html" title="Example">Example</a></h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy no-space">Floating interrupts page flow</h1>
+      <p class="sub-text">When things are floated, they leave the page flow. And non-floated elements ignore them.</p>
+      <p><a href="example/floating.html" title="Example">Example</a></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Clearing the floats</h1>
+      <p class="sub-text">Block level elements that come after floated elements can clear the float from the flow.</p>
+      <p><a href="example/float-clearing.html" title="Example">Example</a></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Float Drop!</h1>
+      <p class="sub-text">If the width of the container can't support all the floated elements, the floated element will "drop" down below the previous floated element</p>
+      <p><a href="example/float-drop.html" title="Example">Example</a></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Position</h1>
+      <p class="sub-text">If you need finer control of the position of elements you can specify the distance either relative to it's parent, or an absolute value in the window.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Available Positions</h1>
+      <p class="sub-text">Static (default), Relative, Absolute, Fixed</p>
+      <h1 class="title no-space fancy">Available Offsets</h1>
+      <p class="sub-text">Top, Left, Bottom, and Right</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Static</h1>
+      <p class="sub-text">If no position is specified, an element is considered static and is positioned by page flow. Since these elements are in page flow, specifying an offset doesn't do anything.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Relative</h1>
+      <p class="sub-text">If an element is position relative, its position is based relative to its static position.</p>
+      <p><a href="example/position-relative.html" title="Example">Example</a></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Absolute</h1>
+      <p class="sub-text">If an element is position absolute, its position is based absolutely from its last relative postioned ancestor. If none, of it's ancestor is position relative, it will use html (the document)</p>
+      <p><a href="example/position-absolute.html" title="Example">Example</a></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Fixed</h1>
+      <p class="sub-text">If an element is position fixed, its position is based absolutely on the window.</p>
+      <p><a href="example/position-fixed.html" title="Example">Example</a></p>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <article class="slide">
+      <h1 class="title no-space">Let's Practice</h1>
+      <p class="sub-text">
+        We're going to start with floats. Boxes in <span class="red">red</span> are float left,
+        and boxes in <span class="blue">blue</span> are float right.
+      </p>
+      <p class="sub-text">
+        For the positioning practice, I just used <span class="green1">green</span>, so it wouldn't be <span class="green2">confused</span> with the <span class="green3">floats</span>.
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Practice 1</h1>
+      <p class="sub-text">
+        <img src="practice/practice1.png" alt="practice 1">
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Practice 2</h1>
+      <p class="sub-text">
+        <img src="practice/practice2.png" alt="practice 2">
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Practice 3</h1>
+      <p class="sub-text">
+        <img src="practice/practice3.png" alt="practice 3">
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Practice 4</h1>
+      <p class="sub-text">
+        <img src="practice/practice4.png" alt="practice 4">
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Practice 5</h1>
+      <p class="sub-text">
+        <img src="practice/practice5.png" alt="practice 5">
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title no-space fancy">Practice 6</h1>
+      <p class="sub-text">
+        <img src="practice/practice6.png" alt="practice 6">
+      </p>
+    </article>
+
+  </section>
+
+  <div class="scripts">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.js"><\/script>')</script>
+
+    <script src="../js/fathom.min.js"></script>
+    <script>
+    (function($, undefined){
+      $(function onReady () {
+        $('#presentation').fathom({
+          displayMode : 'multi',
+          margin : 5000,
+          slideTagName : 'article'
+        })
+      });
+    }(this.jQuery));
+    </script>
+  </div>
+
+</body>
+</html>

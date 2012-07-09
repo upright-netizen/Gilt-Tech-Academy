@@ -1,0 +1,54 @@
+.container {
+  background-color : #aaa;
+  border : 5px solid;
+  height : 700px;
+  margin : 50px auto;
+  position : relative;
+  width : 700px;
+}
+
+.padded {
+  padding : 50px;
+}
+
+.long {
+  background : #ddd url(../img/bg.jpg) repeat top left;
+  height : 10000px;
+}
+
+.box {
+  background-color: green;
+  border : 1px solid;
+  height : 100px;
+  width : 100px;
+}
+
+.float {
+  float : left;
+  margin : 15px;
+}
+
+.relative {
+  position : relative;
+  top : 20px;
+  left : 20px;
+}
+
+.absolute {
+  position : absolute;
+  bottom : 150px;
+  right : 300px;
+}
+
+.fixed {
+  position : fixed;
+  top : 400px;
+  left : 100px;
+}
+
+
+/* Gallagher Micro ClearFix*/
+.cf { zoom: 1; }
+.cf:before,
+.cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
